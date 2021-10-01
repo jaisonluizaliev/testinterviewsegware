@@ -1,4 +1,4 @@
-import PostContent from "../components/screen/Post/PostContent";
+import PostContent from "../components/screen/Post/Content/PostContent";
 
 function Post() {
   return (

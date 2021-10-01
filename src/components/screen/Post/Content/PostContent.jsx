@@ -2,19 +2,10 @@ import { useRouter } from "next/dist/client/router";
 import { useForm } from "react-hook-form";
 import { postContent } from "../../../../services/auth";
 import Nav from "../../../Nav/Nav";
-import {
-  ContainerSign,
-  Form,
-  Title,
-  Button,
-  ContainerButton,
-  Label,
-  TextArea,
-} from "../../styles/StyledSign";
+
 import getToken from "../../../../utils/token";
 import Link from "next/link";
-
-// import { Container } from './styles';
+import { ContainerButton, ContainerSign, Form, Title, Label, TextArea, Button } from "../../../styles/StyledSign";
 
 function PostContent() {
   const router = useRouter();
