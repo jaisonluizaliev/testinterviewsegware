@@ -24,13 +24,7 @@ function View({ data }) {
   }
 
   function handleLike() {
-    if (data.likes) {
-      reactions({
-        feedId: data.id,
-        like: true,
-        love: true,
-      });
-    }
+   
   }
 
   return (
