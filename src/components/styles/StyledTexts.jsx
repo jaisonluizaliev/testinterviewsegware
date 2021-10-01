@@ -5,6 +5,7 @@ export const ContainerCards = styled.ul`
   margin: 5% auto;
   padding-bottom: 10%;
   display: grid;
+  gap: 50px 5px;
   grid-template-columns: 1fr 1fr 1fr;
   padding-top: 10%;
   border-radius: 4px;
@@ -38,6 +39,7 @@ export const Author = styled.span`
   font-weight: 500;
   font-size: 17px;
   display: block;
+  height: 55px;
 `;
 
 export const ButtonLike = styled.button`
