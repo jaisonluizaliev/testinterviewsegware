@@ -1,9 +1,8 @@
-import PostContent from "../components/screen/Post/Content/PostContent";
+import ContentPost from "../components/screen/Post/Content/PostContent";
 
 function Post() {
-  return (
-    <PostContent />
-  );
+  return <ContentPost />
+
 }
 
 export default Post;

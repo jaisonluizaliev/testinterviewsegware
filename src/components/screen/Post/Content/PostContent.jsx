@@ -7,7 +7,7 @@ import getToken from "../../../../utils/token";
 import Link from "next/link";
 import { ContainerButton, ContainerSign, Form, Title, Label, TextArea, Button } from "../../../styles/StyledSign";
 
-function PostContent() {
+function ContentPost() {
   const router = useRouter();
   const { register, handleSubmit } = useForm();
 
@@ -47,4 +47,4 @@ function PostContent() {
   );
 }
 
-export default PostContent;
+export default ContentPost;
