@@ -1,15 +1,23 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle} from 'styled-components'
+import styled from "styled-components";
+
+export const Container = styled.div`
+  max-width: 95%;
+  margin: auto;
+`;
+
 
 export const GlobalStyle = createGlobalStyle`
   :root {
     /* --background-menu : #f1f2f8; */
-    --background-opac: ;
+    --background-opac: #7f8ac7;
     --text-menu: #3b3c3d;
   }
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    vertical-align: baseline;
   }
   html, body {
     font-size: 100%;
