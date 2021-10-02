@@ -1,23 +1,25 @@
-
 import getToken from '../utils/token'
 import api from './api'
 
 export async function reactions(data) {
   const token = getToken()
-  if (token) {
+  if(token) {
+
     try {
       const response = await api.post('/reaction', {
-       ...data
+        ...data
       }, {
         headers: {
-          'Authorization': `Bearer ${token}`
+          "Authorization": `Bearer ${token}`
         }
       })
+      console.log(response)
       return response
     } catch (error) {
       console.log(error)
       return error
     }
   }
+
 
 }

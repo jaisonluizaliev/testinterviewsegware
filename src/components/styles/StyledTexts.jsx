@@ -6,18 +6,22 @@ export const ContainerCards = styled.ul`
   padding-bottom: 10%;
   display: grid;
   gap: 50px 5px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   padding-top: 10%;
   border-radius: 4px;
   background: #7f8ac79d;
-  `;
+  @media (min-width: 993px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+`;
 
 export const Card = styled.li`
   width: 90%;
   margin: auto;
   background:#7f8ac7;
+  border: 1px solid #b8b8b8;
   border-radius: 4px;
-  box-shadow: 4px 4px rgba(0,0,0,.15);
+  box-shadow: 4px 4px rgba(0,0,0,.25);
   padding: 15px;
 `;
 

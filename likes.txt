@@ -1,0 +1,58 @@
+export function Post({ id, content, createdAt, likes, loves, author }: PostProps) {
+  const [loading, setLoading] = useState(false);
+  const [likesCount, setLikesCount] = useState(likes.count);
+  const [liked, setLiked] = useState(likes.reacted);
+  const [lovesCount, setLovesCount] = useState(loves.count);
+  const [loved, setLoved] = useState(loves.reacted);
+
+  async function handleLove() {
+    setLoading(true);
+
+    try {
+      const reaction = !loved;
+
+      await api.post('/reaction', {
+        feedId: id,
+        love: reaction,
+        like: liked
+      });
+
+      setLoved(reaction);
+
+      if (reaction) {
+        setLovesCount(lovesCount + 1);
+      } else {
+        setLovesCount(lovesCount - 1);
+      }
+
+      setLoading(false);
+    } catch (error) {
+      setLoading(false);
+    }
+  }
+
+  async function handleLike() {
+    setLoading(true);
+
+    try {
+      const reaction = !liked;
+
+      await api.post('/reaction', {
+        feedId: id,
+        like: reaction,
+        love: loved
+      });
+
+      setLiked(reaction);
+
+      if (reaction) {
+        setLikesCount(likesCount + 1);
+      } else {
+        setLikesCount(likesCount - 1);
+      }
+
+      setLoading(false);
+    } catch (error) {
+      setLoading(false);
+    }
+  }
