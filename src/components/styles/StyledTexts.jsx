@@ -1,23 +1,13 @@
 import styled from "styled-components";
 
 export const ContainerCards = styled.ul`
-  width: 90%;
-  margin: 5% auto;
-  padding-bottom: 10%;
-  display: grid;
-  gap: 50px 5px;
-  grid-template-columns: 1fr;
-  padding-top: 10%;
-  border-radius: 4px;
+  padding: 30px;
   background: #7f8ac79d;
-  @media (min-width: 993px) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 `;
 
 export const Card = styled.li`
-  width: 90%;
-  margin: auto;
+  width: 80%;
+  margin: 30px auto;
   background:#7f8ac7;
   border: 1px solid #b8b8b8;
   border-radius: 4px;
