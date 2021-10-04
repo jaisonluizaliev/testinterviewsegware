@@ -3,10 +3,13 @@ import styled from "styled-components";
 export const ContainerCards = styled.ul`
   padding: 30px;
   background: #7f8ac79d;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
 `;
 
 export const Card = styled.li`
-  width: 80%;
+  width: 95%;
   margin: 30px auto;
   background:#7f8ac7;
   border: 1px solid #b8b8b8;
@@ -22,7 +25,7 @@ export const ContainerUpVotes = styled.div`
 
 export const Text = styled.h3`
   height: 150px;
-  max-height: auto;
+  word-break: break-all;
   background: #fff;
   border-radius: 2px;
   padding: 5px;
