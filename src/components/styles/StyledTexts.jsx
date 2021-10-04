@@ -6,6 +6,12 @@ export const ContainerCards = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 15px;
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+  @media (max-width: 720px) and (min-width: 481px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `;
 
 export const Card = styled.li`
